@@ -6,3 +6,5 @@ npm-debug.log
 
 // API Keys
 **/keys.js
+
+rethinkdb_data

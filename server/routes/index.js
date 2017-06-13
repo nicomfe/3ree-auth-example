@@ -92,6 +92,14 @@ export default (app, passport) => {
     failureRedirect: '/login'
   }))
 
+  // Twitter
+  // ------
+  router.get('/auth/twitter', passport.authenticate('twitter'))
+  router.get('/auth/twitter/callback', passport.authenticate('twitter', {
+    successRedirect: '/',
+    failureRedirect: '/login'
+  }))
+
   // Root / Error Handler
   // ====================
   router.get('*', initialRender)

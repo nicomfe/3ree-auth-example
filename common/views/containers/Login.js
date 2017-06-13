@@ -50,6 +50,7 @@ class Login extends Component {
         </form>
         <a href="/auth/google">Sign in with Google</a>
         <a href="/auth/facebook">Sign in with Facebook</a>
+        <a href="/auth/twitter">Sign in with Twitter</a>
       </div>
     )
   }

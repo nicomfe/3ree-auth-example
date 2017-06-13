@@ -1,6 +1,7 @@
 import local from './local'
 import google from './google'
 import facebook from './facebook'
+import twitter from './twitter'
 import { intoSession,
          outOfSession } from '../../api/users'
 
@@ -15,4 +16,5 @@ export default function (passport) {
   passport.use(local)
   passport.use(google)
   passport.use(facebook)
+  passport.use(twitter)
 }
